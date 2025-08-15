@@ -68,7 +68,7 @@ Alle n8n-Dateien werden in /opt/n8n/ installiert:
 ```
 
 ## 🔧 Konfiguration
-
+```text
 Umgebungsvariablen(.env)
 Das Script erstellt automatisch eine .env Datei mit:
 - Webhook-URL Konfiguration
@@ -89,9 +89,10 @@ Nginx Konfiguration
 - SSL/TLS mit Let's Encrypt
 - Automatische HTTP → HTTPS Weiterleitung
 - Optimierte Timeouts für lange Workflows
+```
 
 ## 🛠️ Wartung & Verwaltung
-
+```text
 #Status prüfen
 docker-compose -f /opt/n8n/docker-compose.yml ps
 
@@ -108,6 +109,7 @@ docker-compose up -d
 
 #Backup erstellen
 tar -czf n8n-backup-$(date +%Y%m%d).tar.gz /opt/n8n/n8n_data
+```
 
 🔐 Sicherheit
 - ✅ Automatische SSL-Verschlüsselung
@@ -122,7 +124,7 @@ Das Script installiert n8n mit optimalen Einstellungen für:
 - Kleine bis mittlere Installationen (1-100 gleichzeitige Workflows)
 - Bei Bedarf können Ressourcen in docker-compose.yml angepasst werden
 
-# 🐛 Fehlerbehebung
+## 🐛 Fehlerbehebung
 
 Port 80/443 bereits belegt
 ```text
