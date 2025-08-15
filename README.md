@@ -111,19 +111,17 @@ tar -czf n8n-backup-$(date +%Y%m%d).tar.gz /opt/n8n/n8n_data
 
 ## 🔐 Sicherheit
 
-✅ Automatische SSL-Verschlüsselung
-✅ Sichere Passwort-Generierung (32 Zeichen, Base64)
-✅ Verschlüsselte Datenbank
-✅ Basis-Authentifizierung aktiviert
-✅ Isolierte Docker-Umgebung
-✅ Keine externen Telemetrie-Daten
+- ✅ Automatische SSL-Verschlüsselung
+- ✅ Sichere Passwort-Generierung (32 Zeichen, Base64)
+- ✅ Verschlüsselte Datenbank
+- ✅ Basis-Authentifizierung aktiviert
+- ✅ Isolierte Docker-Umgebung
+- ✅ Keine externen Telemetrie-Daten
 
 ## 📊 Performance
-
 Das Script installiert n8n mit optimalen Einstellungen für:
-
-Kleine bis mittlere Installationen (1-100 gleichzeitige Workflows)
-Bei Bedarf können Ressourcen in docker-compose.yml angepasst werden
+- Kleine bis mittlere Installationen (1-100 gleichzeitige Workflows)
+- Bei Bedarf können Ressourcen in docker-compose.yml angepasst werden
 
 ## 🐛 Fehlerbehebung
 
