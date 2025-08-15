@@ -27,15 +27,16 @@ Ein vollautomatisches, interaktives Installations-Script für n8n mit Nginx Reve
 ## 🚀 Schnellstart
 
 ```bash
-# Script herunterladen
-wget https://raw.githubusercontent.com/andreashoefler1985/n8n-bashscript/install_n8n.sh
+  # Script herunterladen
+  wget https://raw.githubusercontent.com/andreashoefler1985/n8n-bashscript/
+  install_n8n.sh
 
-# Ausführbar machen
-chmod +x install_n8n.sh
+  # Ausführbar machen
+  chmod +x install_n8n.sh
 
-# Installation starten
-sudo ./install_n8n.sh
-
+  # Installation starten
+  sudo ./install_n8n.sh
+  ```
 
 ## 💬 Interaktive Installation
 Das Script fragt Sie nach:
