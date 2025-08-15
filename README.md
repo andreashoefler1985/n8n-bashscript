@@ -95,18 +95,21 @@ Optimierte Timeouts für lange Workflows
 
 ## 🛠️ Wartung & Verwaltung
 
-Status prüfen
+# Status prüfen
 docker-compose -f /opt/n8n/docker-compose.yml ps
 
-Logs anzeigen
+# Logs anzeigen
 docker-compose -f /opt/n8n/docker-compose.yml logs -f
-n8n neustarten
+
+# n8n neustarten
 docker-compose -f /opt/n8n/docker-compose.yml restart
-n8n aktualisieren
+
+# n8n aktualisieren
 cd /opt/n8n
 docker-compose pull
 docker-compose up -d
-Backup erstellen
+
+# Backup erstellen
 tar -czf n8n-backup-$(date +%Y%m%d).tar.gz /opt/n8n/n8n_data
 
 ## 🔐 Sicherheit
@@ -127,13 +130,15 @@ Bei Bedarf können Ressourcen in docker-compose.yml angepasst werden
 
 ## 🐛 Fehlerbehebung
 
-Port 80/443 bereits belegt
+# Port 80/443 bereits belegt
 sudo lsof -i :80
 sudo lsof -i :443
-SSL-Zertifikat Fehler
+
+# SSL-Zertifikat Fehler
 sudo certbot renew --dry-run  # Test
 sudo certbot renew            # Erneuern
-n8n nicht erreichbar
+
+# n8n nicht erreichbar
 
 # Nginx Status prüfen
 sudo systemctl status nginx
