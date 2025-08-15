@@ -67,7 +67,7 @@ Alle n8n-Dateien werden in /opt/n8n/ installiert:
 └── files/              # Datei-Uploads
 ```
 
-🔧 Konfiguration
+## 🔧 Konfiguration
 
 Umgebungsvariablen(.env)
 Das Script erstellt automatisch eine .env Datei mit:
@@ -90,27 +90,26 @@ Nginx Konfiguration
 - Automatische HTTP → HTTPS Weiterleitung
 - Optimierte Timeouts für lange Workflows
 
-🛠️ Wartung & Verwaltung
+## 🛠️ Wartung & Verwaltung
 
-Status prüfen
+#Status prüfen
 docker-compose -f /opt/n8n/docker-compose.yml ps
 
-Logs anzeigen
+#Logs anzeigen
 docker-compose -f /opt/n8n/docker-compose.yml logs -f
 
-n8n neustarten
+#n8n neustarten
 docker-compose -f /opt/n8n/docker-compose.yml restart
 
-n8n aktualisieren
+#n8n aktualisieren
 cd /opt/n8n
 docker-compose pull
 docker-compose up -d
 
-Backup erstellen
+#Backup erstellen
 tar -czf n8n-backup-$(date +%Y%m%d).tar.gz /opt/n8n/n8n_data
 
 🔐 Sicherheit
-
 - ✅ Automatische SSL-Verschlüsselung
 - ✅ Sichere Passwort-Generierung (32 Zeichen, Base64)
 - ✅ Verschlüsselte Datenbank
@@ -123,7 +122,7 @@ Das Script installiert n8n mit optimalen Einstellungen für:
 - Kleine bis mittlere Installationen (1-100 gleichzeitige Workflows)
 - Bei Bedarf können Ressourcen in docker-compose.yml angepasst werden
 
-🐛 Fehlerbehebung
+# 🐛 Fehlerbehebung
 
 Port 80/443 bereits belegt
 ```text
