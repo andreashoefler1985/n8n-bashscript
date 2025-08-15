@@ -57,8 +57,9 @@ Ein vollautomatisches, interaktives Installations-Script für n8n mit Nginx Reve
 
 ## 📁 Installationsverzeichnis
 
-```text
 Alle n8n-Dateien werden in /opt/n8n/ installiert:
+
+```text
 /opt/n8n/
 ├── .env                 # Umgebungsvariablen
 ├── docker-compose.yml   # Docker Konfiguration
