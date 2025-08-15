@@ -96,37 +96,40 @@ Status prüfen
 docker-compose -f /opt/n8n/docker-compose.yml ps
 
 Logs anzeigen
-bashdocker-compose -f /opt/n8n/docker-compose.yml logs -f
+docker-compose -f /opt/n8n/docker-compose.yml logs -f
 n8n neustarten
-bashdocker-compose -f /opt/n8n/docker-compose.yml restart
+docker-compose -f /opt/n8n/docker-compose.yml restart
 n8n aktualisieren
-bashcd /opt/n8n
+cd /opt/n8n
 docker-compose pull
 docker-compose up -d
 Backup erstellen
-bashtar -czf n8n-backup-$(date +%Y%m%d).tar.gz /opt/n8n/n8n_data
-🔐 Sicherheit
+tar -czf n8n-backup-$(date +%Y%m%d).tar.gz /opt/n8n/n8n_data
+
+## 🔐 Sicherheit
 ✅ Automatische SSL-Verschlüsselung
 ✅ Sichere Passwort-Generierung (32 Zeichen, Base64)
 ✅ Verschlüsselte Datenbank
 ✅ Basis-Authentifizierung aktiviert
 ✅ Isolierte Docker-Umgebung
 ✅ Keine externen Telemetrie-Daten
-📊 Performance
+
+## 📊 Performance
 Das Script installiert n8n mit optimalen Einstellungen für:
 
 Kleine bis mittlere Installationen (1-100 gleichzeitige Workflows)
 Bei Bedarf können Ressourcen in docker-compose.yml angepasst werden
 
-🐛 Fehlerbehebung
+## 🐛 Fehlerbehebung
 Port 80/443 bereits belegt
-bashsudo lsof -i :80
+sudo lsof -i :80
 sudo lsof -i :443
 SSL-Zertifikat Fehler
-bashsudo certbot renew --dry-run  # Test
+sudo certbot renew --dry-run  # Test
 sudo certbot renew            # Erneuern
 n8n nicht erreichbar
-bash# Nginx Status prüfen
+
+# Nginx Status prüfen
 sudo systemctl status nginx
 
 # Docker Container prüfen
@@ -135,10 +138,10 @@ docker ps -a
 # Firewall prüfen
 sudo ufw status
 
-##📝 Lizenz
+## 📝 Lizenz
 MIT License - Siehe LICENSE Datei
 
-🙏 Credits
+## 🙏 Credits
 n8n.io - Workflow Automation Tool
 Let's Encrypt - Kostenlose SSL-Zertifikate
 
