@@ -69,29 +69,26 @@ Alle n8n-Dateien werden in /opt/n8n/ installiert:
 
 ## 🔧 Konfiguration
 
-Umgebungsvariablen (.env)
+# Umgebungsvariablen (.env)
 Das Script erstellt automatisch eine .env Datei mit:
+- Webhook-URL Konfiguration
+- SSL/HTTPS Einstellungen
+- Basis-Authentifizierung
+- Verschlüsselungsschlüssel
+- Zeitzone
 
-Webhook-URL Konfiguration
-SSL/HTTPS Einstellungen
-Basis-Authentifizierung
-Verschlüsselungsschlüssel
-Zeitzone
+# Docker Compose
+- Verwendet das offizielle n8nio/n8n:latest Image
+- Automatische Neustarts bei Fehlern
+- Persistente Volumes für Daten
+- Isoliertes Netzwerk
 
-Docker Compose
-
-Verwendet das offizielle n8nio/n8n:latest Image
-Automatische Neustarts bei Fehlern
-Persistente Volumes für Daten
-Isoliertes Netzwerk
-
-Nginx Konfiguration
-
-Reverse Proxy auf Port 5678
-WebSocket Support für Echtzeit-Updates
-SSL/TLS mit Let's Encrypt
-Automatische HTTP → HTTPS Weiterleitung
-Optimierte Timeouts für lange Workflows
+# Nginx Konfiguration
+- Reverse Proxy auf Port 5678
+- WebSocket Support für Echtzeit-Updates
+- SSL/TLS mit Let's Encrypt
+- Automatische HTTP → HTTPS Weiterleitung
+- Optimierte Timeouts für lange Workflows
 
 ## 🛠️ Wartung & Verwaltung
 
@@ -131,15 +128,17 @@ Bei Bedarf können Ressourcen in docker-compose.yml angepasst werden
 ## 🐛 Fehlerbehebung
 
 # Port 80/443 bereits belegt
+```text
 sudo lsof -i :80
 sudo lsof -i :443
-
+```
 # SSL-Zertifikat Fehler
+```text
 sudo certbot renew --dry-run  # Test
 sudo certbot renew            # Erneuern
-
+```
 # n8n nicht erreichbar
-
+```text
 # Nginx Status prüfen
 sudo systemctl status nginx
 
@@ -148,15 +147,14 @@ docker ps -a
 
 # Firewall prüfen
 sudo ufw status
+```
 
 ## 📝 Lizenz
-
-MIT License - Siehe LICENSE Datei
+- MIT License
 
 ## 🙏 Credits
-
-n8n.io - Workflow Automation Tool
-Let's Encrypt - Kostenlose SSL-Zertifikate
+- n8n.io - Workflow Automation Tool
+- Let's Encrypt - Kostenlose SSL-Zertifikate
 
 
 ⭐ Wenn dieses Script hilfreich war, vergiss nicht einen Stern zu geben!
