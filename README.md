@@ -67,7 +67,7 @@ Alle n8n-Dateien werden in /opt/n8n/ installiert:
 └── files/              # Datei-Uploads
 ```
 
-## 🔧 Konfiguration
+🔧 Konfiguration
 
 Umgebungsvariablen(.env)
 Das Script erstellt automatisch eine .env Datei mit:
@@ -77,20 +77,20 @@ Das Script erstellt automatisch eine .env Datei mit:
 - Verschlüsselungsschlüssel
 - Zeitzone
 
-# Docker Compose
+Docker Compose
 - Verwendet das offizielle n8nio/n8n:latest Image
 - Automatische Neustarts bei Fehlern
 - Persistente Volumes für Daten
 - Isoliertes Netzwerk
 
-# Nginx Konfiguration
+Nginx Konfiguration
 - Reverse Proxy auf Port 5678
 - WebSocket Support für Echtzeit-Updates
 - SSL/TLS mit Let's Encrypt
 - Automatische HTTP → HTTPS Weiterleitung
 - Optimierte Timeouts für lange Workflows
 
-## 🛠️ Wartung & Verwaltung
+🛠️ Wartung & Verwaltung
 
 # Status prüfen
 docker-compose -f /opt/n8n/docker-compose.yml ps
