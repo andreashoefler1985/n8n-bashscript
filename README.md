@@ -40,33 +40,31 @@ Ein vollautomatisches, interaktives Installations-Script für n8n mit Nginx Reve
 
 ## 💬 Interaktive Installation
 
-Das Script fragt Sie nach:
+```text
+  ╔═══════════════════════════════════════╗
+  ║     n8n Installation mit Nginx SSL    ║
+  ╚═══════════════════════════════════════╝
 
-Domain - Ihre n8n-Domain (z.B. n8n.example.com)
-E-Mail - Für Let's Encrypt SSL-Zertifikat
-Zeitzone - Standard: Europe/Berlin
-Admin-Passwort - Automatisch generiert oder selbst wählen
+  Domain für n8n: n8n.meine-domain.de
+  E-Mail-Adresse: admin@meine-domain.de
+  Zeitzone (Standard: Europe/Berlin): [Enter]
+  Admin-Passwort:
+  1) Automatisch generieren (empfohlen)
+  2) Selbst eingeben
+  Auswahl: 1
+  ```
 
-╔═══════════════════════════════════════╗
-║     n8n Installation mit Nginx SSL    ║
-╚═══════════════════════════════════════╝
-
-Domain für n8n: n8n.meine-domain.de
-E-Mail-Adresse: admin@meine-domain.de
-Zeitzone (Standard: Europe/Berlin): [Enter]
-Admin-Passwort:
-1) Automatisch generieren (empfohlen)
-2) Selbst eingeben
-Auswahl: 1
 
 ## 📁 Installationsverzeichnis
 
+```text
 Alle n8n-Dateien werden in /opt/n8n/ installiert:
 /opt/n8n/
 ├── .env                 # Umgebungsvariablen
 ├── docker-compose.yml   # Docker Konfiguration
 ├── n8n_data/           # n8n Daten & Workflows
 └── files/              # Datei-Uploads
+```
 
 ## 🔧 Konfiguration
 
