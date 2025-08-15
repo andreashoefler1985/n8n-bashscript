@@ -92,21 +92,21 @@ Nginx Konfiguration
 
 🛠️ Wartung & Verwaltung
 
-# Status prüfen
+Status prüfen
 docker-compose -f /opt/n8n/docker-compose.yml ps
 
-# Logs anzeigen
+Logs anzeigen
 docker-compose -f /opt/n8n/docker-compose.yml logs -f
 
-# n8n neustarten
+n8n neustarten
 docker-compose -f /opt/n8n/docker-compose.yml restart
 
-# n8n aktualisieren
+n8n aktualisieren
 cd /opt/n8n
 docker-compose pull
 docker-compose up -d
 
-# Backup erstellen
+Backup erstellen
 tar -czf n8n-backup-$(date +%Y%m%d).tar.gz /opt/n8n/n8n_data
 
 🔐 Sicherheit
