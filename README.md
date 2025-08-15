@@ -68,7 +68,6 @@ Alle n8n-Dateien werden in /opt/n8n/ installiert:
 ```
 
 ## 🔧 Konfiguration
-
 # Umgebungsvariablen (.env)
 Das Script erstellt automatisch eine .env Datei mit:
 - Webhook-URL Konfiguration
