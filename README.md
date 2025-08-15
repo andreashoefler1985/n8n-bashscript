@@ -47,7 +47,6 @@ E-Mail - Für Let's Encrypt SSL-Zertifikat
 Zeitzone - Standard: Europe/Berlin
 Admin-Passwort - Automatisch generiert oder selbst wählen
 
-Beispiel-Durchlauf:
 ╔═══════════════════════════════════════╗
 ║     n8n Installation mit Nginx SSL    ║
 ╚═══════════════════════════════════════╝
