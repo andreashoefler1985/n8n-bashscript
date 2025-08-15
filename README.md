@@ -39,6 +39,7 @@ Ein vollautomatisches, interaktives Installations-Script für n8n mit Nginx Reve
   ```
 
 ## 💬 Interaktive Installation
+
 Das Script fragt Sie nach:
 
 Domain - Ihre n8n-Domain (z.B. n8n.example.com)
@@ -60,6 +61,7 @@ Admin-Passwort:
 Auswahl: 1
 
 ## 📁 Installationsverzeichnis
+
 Alle n8n-Dateien werden in /opt/n8n/ installiert:
 /opt/n8n/
 ├── .env                 # Umgebungsvariablen
@@ -68,6 +70,7 @@ Alle n8n-Dateien werden in /opt/n8n/ installiert:
 └── files/              # Datei-Uploads
 
 ## 🔧 Konfiguration
+
 Umgebungsvariablen (.env)
 Das Script erstellt automatisch eine .env Datei mit:
 
@@ -92,7 +95,8 @@ SSL/TLS mit Let's Encrypt
 Automatische HTTP → HTTPS Weiterleitung
 Optimierte Timeouts für lange Workflows
 
-🛠️ Wartung & Verwaltung
+## 🛠️ Wartung & Verwaltung
+
 Status prüfen
 docker-compose -f /opt/n8n/docker-compose.yml ps
 
@@ -108,6 +112,7 @@ Backup erstellen
 tar -czf n8n-backup-$(date +%Y%m%d).tar.gz /opt/n8n/n8n_data
 
 ## 🔐 Sicherheit
+
 ✅ Automatische SSL-Verschlüsselung
 ✅ Sichere Passwort-Generierung (32 Zeichen, Base64)
 ✅ Verschlüsselte Datenbank
@@ -116,12 +121,14 @@ tar -czf n8n-backup-$(date +%Y%m%d).tar.gz /opt/n8n/n8n_data
 ✅ Keine externen Telemetrie-Daten
 
 ## 📊 Performance
+
 Das Script installiert n8n mit optimalen Einstellungen für:
 
 Kleine bis mittlere Installationen (1-100 gleichzeitige Workflows)
 Bei Bedarf können Ressourcen in docker-compose.yml angepasst werden
 
 ## 🐛 Fehlerbehebung
+
 Port 80/443 bereits belegt
 sudo lsof -i :80
 sudo lsof -i :443
@@ -140,9 +147,11 @@ docker ps -a
 sudo ufw status
 
 ## 📝 Lizenz
+
 MIT License - Siehe LICENSE Datei
 
 ## 🙏 Credits
+
 n8n.io - Workflow Automation Tool
 Let's Encrypt - Kostenlose SSL-Zertifikate
 
