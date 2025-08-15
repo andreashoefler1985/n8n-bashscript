@@ -37,7 +37,7 @@ chmod +x install_n8n.sh
 sudo ./install_n8n.sh
 
 
-💬 Interaktive Installation
+## 💬 Interaktive Installation
 Das Script fragt Sie nach:
 
 Domain - Ihre n8n-Domain (z.B. n8n.example.com)
@@ -57,14 +57,16 @@ Admin-Passwort:
 1) Automatisch generieren (empfohlen)
 2) Selbst eingeben
 Auswahl: 1
-📁 Installationsverzeichnis
+
+## 📁 Installationsverzeichnis
 Alle n8n-Dateien werden in /opt/n8n/ installiert:
 /opt/n8n/
 ├── .env                 # Umgebungsvariablen
 ├── docker-compose.yml   # Docker Konfiguration
 ├── n8n_data/           # n8n Daten & Workflows
 └── files/              # Datei-Uploads
-🔧 Konfiguration
+
+## 🔧 Konfiguration
 Umgebungsvariablen (.env)
 Das Script erstellt automatisch eine .env Datei mit:
 
@@ -91,7 +93,8 @@ Optimierte Timeouts für lange Workflows
 
 🛠️ Wartung & Verwaltung
 Status prüfen
-bashdocker-compose -f /opt/n8n/docker-compose.yml ps
+docker-compose -f /opt/n8n/docker-compose.yml ps
+
 Logs anzeigen
 bashdocker-compose -f /opt/n8n/docker-compose.yml logs -f
 n8n neustarten
@@ -103,14 +106,12 @@ docker-compose up -d
 Backup erstellen
 bashtar -czf n8n-backup-$(date +%Y%m%d).tar.gz /opt/n8n/n8n_data
 🔐 Sicherheit
-
 ✅ Automatische SSL-Verschlüsselung
 ✅ Sichere Passwort-Generierung (32 Zeichen, Base64)
 ✅ Verschlüsselte Datenbank
 ✅ Basis-Authentifizierung aktiviert
 ✅ Isolierte Docker-Umgebung
 ✅ Keine externen Telemetrie-Daten
-
 📊 Performance
 Das Script installiert n8n mit optimalen Einstellungen für:
 
@@ -134,13 +135,12 @@ docker ps -a
 # Firewall prüfen
 sudo ufw status
 
-📝 Lizenz
+##📝 Lizenz
 MIT License - Siehe LICENSE Datei
-🙏 Credits
 
+🙏 Credits
 n8n.io - Workflow Automation Tool
 Let's Encrypt - Kostenlose SSL-Zertifikate
-
 
 
 ⭐ Wenn dieses Script hilfreich war, vergiss nicht einen Stern zu geben!
