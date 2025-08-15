@@ -118,12 +118,12 @@ tar -czf n8n-backup-$(date +%Y%m%d).tar.gz /opt/n8n/n8n_data
 - ✅ Isolierte Docker-Umgebung
 - ✅ Keine externen Telemetrie-Daten
 
-## 📊 Performance
+# 📊 Performance
 Das Script installiert n8n mit optimalen Einstellungen für:
 - Kleine bis mittlere Installationen (1-100 gleichzeitige Workflows)
 - Bei Bedarf können Ressourcen in docker-compose.yml angepasst werden
 
-## 🐛 Fehlerbehebung
+# 🐛 Fehlerbehebung
 
 # Port 80/443 bereits belegt
 ```text
