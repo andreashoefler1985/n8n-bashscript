@@ -125,17 +125,17 @@ Das Script installiert n8n mit optimalen Einstellungen für:
 
 # 🐛 Fehlerbehebung
 
-# Port 80/443 bereits belegt
+Port 80/443 bereits belegt
 ```text
 sudo lsof -i :80
 sudo lsof -i :443
 ```
-# SSL-Zertifikat Fehler
+SSL-Zertifikat Fehler
 ```text
 sudo certbot renew --dry-run  # Test
 sudo certbot renew            # Erneuern
 ```
-# n8n nicht erreichbar
+n8n nicht erreichbar
 ```text
 # Nginx Status prüfen
 sudo systemctl status nginx
@@ -147,10 +147,10 @@ docker ps -a
 sudo ufw status
 ```
 
-## 📝 Lizenz
+# 📝 Lizenz
 - MIT License
 
-## 🙏 Credits
+# 🙏 Credits
 - n8n.io - Workflow Automation Tool
 - Let's Encrypt - Kostenlose SSL-Zertifikate
 
