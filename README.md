@@ -111,7 +111,7 @@ docker-compose up -d
 tar -czf n8n-backup-$(date +%Y%m%d).tar.gz /opt/n8n/n8n_data
 ```
 
-🔐 Sicherheit
+# 🔐 Sicherheit
 - ✅ Automatische SSL-Verschlüsselung
 - ✅ Sichere Passwort-Generierung (32 Zeichen, Base64)
 - ✅ Verschlüsselte Datenbank
@@ -119,12 +119,12 @@ tar -czf n8n-backup-$(date +%Y%m%d).tar.gz /opt/n8n/n8n_data
 - ✅ Isolierte Docker-Umgebung
 - ✅ Keine externen Telemetrie-Daten
 
-📊 Performance
+# 📊 Performance
 Das Script installiert n8n mit optimalen Einstellungen für:
 - Kleine bis mittlere Installationen (1-100 gleichzeitige Workflows)
 - Bei Bedarf können Ressourcen in docker-compose.yml angepasst werden
 
-## 🐛 Fehlerbehebung
+# 🐛 Fehlerbehebung
 
 Port 80/443 bereits belegt
 ```text
@@ -154,6 +154,5 @@ sudo ufw status
 🙏 Credits
 - n8n.io - Workflow Automation Tool
 - Let's Encrypt - Kostenlose SSL-Zertifikate
-
 
 ⭐ Wenn dieses Script hilfreich war, vergiss nicht einen Stern zu geben!
